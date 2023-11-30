@@ -1,0 +1,24 @@
+package Browserslaunch;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+
+public class microsoftedge {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\sai mahesh\\Downloads\\web browsers\\msedgedriver.exe");
+	    WebDriver driver = new EdgeDriver();
+		driver.get("https:\\www.linkedin.com");		
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.close();
+		
+		
+		
+		
+		
+
+	}
+
+}
