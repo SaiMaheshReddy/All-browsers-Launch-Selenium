@@ -1,0 +1,18 @@
+package Browserslaunch;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.opera.OperaDriver;
+
+public class operalaunch {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.opera.driver", "C:\\Users\\sai mahesh\\Downloads\\web browsers\\operadriver.exe");	
+		WebDriver driver = new OperaDriver();
+		driver.get("https:\\www.gmail.com");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.quit();
+
+	}
+
+}
